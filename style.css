@@ -1,0 +1,73 @@
+.container {
+    /* background-color: bisque; */
+    display: flex;
+    height: 100vh;
+    width: 100vw
+
+}
+
+.container .left .add-new , .container .right .save-content {
+    display: flex;
+    justify-content: flex-end;
+    padding: .5rem;
+}
+
+.container .left {
+    width: 30vw;
+    border-radius: 20px;
+    margin: 2rem;
+    border: 2px solid grey;
+    overflow-x: scroll;
+}
+
+.container .right {
+    width: 70vw;
+    border-radius: 20px;
+    margin: 2rem;
+    border: 2px solid grey;
+    overflow-x: scroll;
+
+}
+
+h1 {
+    text-align: center;
+    color: grey
+}
+
+
+.right #note-content {
+    width:100%
+}
+
+.right .notes-details {
+    padding: .5rem
+}
+
+.right .content {
+    width: 100%;
+}
+
+.left ul {
+    list-style-type: none;
+    padding-inline-start: 0;
+}
+
+
+.left ul li{
+    border: 1px solid grey;
+    margin: 1rem;
+    padding: 1rem;
+    cursor: pointer;
+}
+
+.selected {
+    background-color: rgb(95, 94, 94);
+}
+
+.clear-list {
+    margin-right: .5rem;
+}
+
+.done {
+    margin-left: auto
+}

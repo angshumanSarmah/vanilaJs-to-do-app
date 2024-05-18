@@ -1,0 +1,38 @@
+<html>
+    <head>
+        <script src="script.js"></script>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body  onload="populateData()">
+        <div class="container">
+            <div class="left">
+                <h1>To-do list</h1>
+                <div class="add-new">
+                    <button class="clear-list" onclick="clearList()">Clear item</button>
+                    <button onclick="addNew()">+ Add item</button>
+                </div>
+                <div id="notes-list" onload="populateData()">
+                    <ul id="list-ul">
+                    </ul>
+                </div>
+            </div>
+            <div class="right">
+                <h1>Details</h1>
+                <div class="notes-details">
+                    <p>Title</p>
+                    <input id="note-title" type="text"/>
+                    <hr>
+                    <div>
+                        <p>Content</p>
+                        <textarea rows=10 id="note-content"></textarea>
+                    </div>
+                    <div class="save-content">
+                        <button onclick="saveNote()">
+                            Save
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
